@@ -28,8 +28,7 @@
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./images/ycc logo.png" width="50"
-                        height="50"><strong>YELLOWCAPCOMMUNITY</strong></a>
+                <a class="navbar-brand" href="#"><img src="./images/ycc logo.png" width="50" height="50"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -73,7 +72,7 @@
                         <h4>CONQUEST LINKEDIN</h4>
                         <h5>Winner: Logavani T</h5><br>
                         <h5><a href="https://www.linkedin.com/feed/update/urn:li:activity:6825094425451089920"
-                                class="btn btn-danger">See Winner!</a></h5>
+                                class="btn btn-danger">See Winner's Profile!</a></h5>
                     </div>
 
                 </div>
@@ -86,7 +85,21 @@
                     </div>
                     <div class="contentBx">
                         <h4>THE BLOGGER</h4>
-                        <h5>A technical blogging contest</h5><br>
+                        <h5>A technical blogging contest</h5>
+                        <h5><a id="myBtn" class="btn btn-info">See Rules</a></h5>
+                        <div id="mypopup" class="popup">
+
+                            <!-- Modal content -->
+                            <div class="popup-content">
+                                <span class="close">&times;</span>
+                                <p>
+                                    RULES WILL BE UPDATED
+                                </p>
+                            </div>
+
+                        </div>
+
+
                         <!-- https://forms.gle/V4gcW7B1x5ZSwdtH6 -->
                         <h5><a href="eventregister.html" target="blank" class="btn btn-success">Register!</a></h5>
                     </div>
@@ -139,6 +152,33 @@
     </section>
 </body>
 
+<script>
+    // Get the modal
+    var modal = document.getElementById("mypopup");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 <!-------------Footer---------------->
 <footer id="footer" class="footer-1">
     <style>
@@ -222,7 +262,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p>Copyright YELLOWCAPCOMMUNITY © 2021. All rights reserved.</p>
+                    <p>Copyright <a href="https://www.linkedin.com/company/yellowcapcommunity"
+                            style="text-decoration: none; color: #feb306;">YELLOWCAPCOMMUNITY </a>©
+                        2021. All rights reserved.
+                        Construction and maintenance of site, all by civil engineers
+                    </p>
                 </div>
             </div>
         </div>
