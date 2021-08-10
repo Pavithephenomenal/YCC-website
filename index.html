@@ -191,28 +191,32 @@
                             <input type="hidden" name="_subject" value="New Member Registered!">
                             <input type="hidden" name="_template" value="table">
                             <input type="hidden" name="_next" value="https://yellowcapcommunity.in/thankyou.html">
-                            <form action="https://formsubmit.co/your-random-string" method="POST" />
+                            <!-- <form action="https://formsubmit.co/your-random-string" method="POST"> -->
 
                             <h3 class="my-3 text-warning font-weight-medium text-uppercase">REGISTER YOURSELF</h3>
                             <div class="bg-white">
                                 <div class="form-row border-bottom">
                                     <div class="p-4 left border-right w-50">
-                                        <label class="text-inverse font-12 text-uppercase" name="name">Name</label>
-                                        <input type="text" class="border-0 p-0 font-14 form-control"
-                                            placeholder="Your Name" />
+                                        <label class="text-inverse font-12 text-uppercase">Name</label><select
+                                            id="form_need" name="name" class="form-control" required="required"
+                                            data-error="Please specify your need.">
+                                            <input type="text" class="border-0 p-0 font-14 form-control"
+                                                placeholder="Your Name" />
                                     </div>
                                     <div class="p-4 right w-50">
-                                        <label class="text-inverse font-12 text-uppercase" name="Year">Year of
-                                            Graduation</label>
-                                        <input type="text" class="border-0 p-0 font-14 form-control"
-                                            placeholder="Your Year" />
+                                        <label class="text-inverse font-12 text-uppercase">Year of
+                                            Graduation</label><select id="form_need" name="Year" class="form-control"
+                                            required="required" data-error="Please specify your need.">
+                                            <input type="text" class="border-0 p-0 font-14 form-control"
+                                                placeholder="Your Year" />
                                     </div>
                                 </div>
                                 <div class="form-row border-bottom p-4">
-                                    <label class="text-inverse font-12 text-uppercase" name="mail id">Email
-                                        Address</label>
-                                    <input type="text" class="border-0 p-0 font-14 form-control"
-                                        placeholder="Enter your Email Address" />
+                                    <label class="text-inverse font-12 text-uppercase">Email
+                                        Address</label><select id="form_need" name="mail id" class="form-control"
+                                        required="required" data-error="Please specify your need.">
+                                        <input type="text" class="border-0 p-0 font-14 form-control"
+                                            placeholder="Enter your Email Address" />
                                 </div>
                                 <div class="form-row border-bottom p-4">
                                     <label for="form_need">Please specify your need
@@ -232,10 +236,12 @@
                                 </div>
 
                                 <div class="form-row border-bottom p-4" name="message">
-                                    <label class="text-inverse font-12 text-uppercase">Why you wanna Join us?</label>
-                                    <textarea col="1" row="1"
-                                        class="border-0 p-0 font-weight-light font-14 form-control"
-                                        placeholder="Write Down the Message"></textarea>
+                                    <label class="text-inverse font-12 text-uppercase">Why you wanna Join
+                                        us?</label><select id="form_need" name="message" class="form-control"
+                                        required="required" data-error="Please specify your need.">
+                                        <textarea col="1" row="1"
+                                            class="border-0 p-0 font-weight-light font-14 form-control"
+                                            placeholder="Write Down the Message"></textarea>
                                 </div>
                                 <div style="text-align: center;">
                                     <button
@@ -244,6 +250,7 @@
                                     </button>
                                 </div>
                             </div>
+                        </form>
                     </div>
                 </div>
             </div>
