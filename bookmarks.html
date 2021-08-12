@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<head>
+    <title>YellowCapCommunity</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/ycc logo.png" />
+    <link rel="stylesheet" href="style2.css">
+
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    </link>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Balthazar|Nunito:300');
+
+        body {
+            background: #eceff1;
+        }
+
+        h1 {
+            text-align: center;
+
+            letter-spacing: 2px;
+        }
+
+        p {
+            margin: 2px 0;
+        }
+
+        .table {
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+        }
+
+        .card {
+            width: 340px;
+            max-height: 460px;
+            border: 1px solid #222;
+            box-sizing: border-box;
+            padding: 10px;
+            text-align: center;
+
+            font-weight: 300;
+            margin: 10px;
+            box-shadow: 0 0 8px rgba(43, 47, 62, .1);
+            transition: 1s all ease;
+        }
+
+        .property {
+            border: 2px solid #222;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 5px;
+            font-size: 28px;
+            letter-spacing: 1px;
+            font-family: 'Balthazar', serif;
+            font-weight: 400;
+            cursor: pointer;
+            outline: none;
+            transition: 1s all ease;
+        }
+
+        .yellow {
+            background: #feb306;
+        }
+
+
+        .eyebrow {
+            display: block;
+            font-size: 14px;
+            letter-spacing: 4px;
+            margin-bottom: 5px;
+        }
+
+        ::-webkit-details-marker {
+            display: none;
+        }
+
+        .rent {
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+        .priceTable {
+            width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+
+        }
+
+        .priceTable .qty,
+        .priceTable .price {
+            width: 50%;
+        }
+
+        .priceTable .qty {
+            text-transform: capitalize;
+            text-align: left;
+        }
+
+        .priceTable .price {
+            text-align: right;
+        }
+
+        .hotel {
+            margin-top: 5px;
+        }
+
+        .disclaimer {
+            font-size: 10px;
+            margin: 10px 0;
+        }
+    </style>
+
+</head>
+<div class="demo">
+    <style>
+        .pagination-outer {
+            text-align: center;
+        }
+
+        .pagination {
+
+            border-radius: 10px 10px 0 0;
+            border-top: 10px solid #feb306;
+            display: inline-flex;
+        }
+
+        .pagination li {
+            padding: 5px 0;
+            margin: 0 5px;
+        }
+
+        .pagination li a.page-link {
+            color: #000;
+            background: transparent;
+            font-size: 21px;
+            font-weight: 500;
+            line-height: 30px;
+            height: 33px;
+            width: 150px;
+            padding: 0;
+            margin: 0;
+            border: 1px solid #feb306;
+            border-radius: 0;
+            display: block;
+            transition: all 0.3s ease 0s;
+        }
+
+        .pagination li.active a.page-link,
+        .pagination li a.page-link:hover,
+        .pagination li.active a.page-link:hover,
+        .pagination li a.page-link:focus {
+            color: #000;
+            background: #feb306;
+            line-height: 38px;
+            height: 41px;
+            margin: -5px 0 -3px;
+            border: 1px solid #feb306;
+        }
+
+        @media only screen and (max-width: 480px) {
+            .pagination {
+                font-size: 0;
+                display: block;
+            }
+
+            .pagination li {
+                display: inline-block;
+            }
+        }
+    </style>
+    <nav class="pagination-outer" aria-label="Page navigation">
+        <ul class="pagination">
+
+            <li class="page-item"><a class="page-link" href="index.html">HOME</a></li>
+            <li class="page-item"><a class="page-link" href="resources.html">RESOURCES</a></li>
+            <li class="page-item active"><a class="page-link" href="#">BLOG</a></li>
+
+        </ul>
+    </nav>
+</div>
+
+
+<body>
+    <div class=" text-center mt-5 ">
+        <h1><img src="./images/ycc logo.png" width="200" height="200"> <br>YCC- BOOKMARKS</h1>
+    </div>
+    <h1>Click to Download</h1>
+    <div class="table">
+        <section>
+            <details class="card">
+                <summary class="property yellow">
+                    <span class="eyebrow">FIRST YEAR</span>
+                    SEMESTER-1
+                </summary>
+                <p class="rent">5 papers</p>
+                <div class="priceTable">
+                    <div class="qty">Chemistry</div>
+                    <div class="price">Jain and Jain</div>
+                    <div class="qty">Eng. Graphics</div>
+                    <div class="price">N D BHATT</div>
+                    <div class="qty">BEEE</div>
+                    <div class="price">Saalivahanan</div>
+                    <div class="qty"> M-1</div>
+                    <div class="price">T. Veerarajan</div>
+                </div>
+
+                <p class="hotelCost"><a
+                        href="https://drive.google.com/drive/folders/1aH5uGlZaU-KrRlg9NxTv0EGUVEd9C_mK?usp=sharing">Download</a>
+                </p>
+                <p class="disclaimer">YCC don't have any Copyrights of the books, it all taken from a open
+                    source<br />&copy;2021 YCC, Inc.</p>
+            </details>
+
+            <details class="card">
+                <summary class="property yellow">
+                    <span class="eyebrow">FIRST YEAR</span>
+                    SEMESTER-2
+                </summary>
+                <p class="rent">7 papers</p>
+                <div class="priceTable">
+                    <div class="qty">C Programming</div>
+                    <div class="price">Pradip Dey</div>
+                    <div class="qty">Eng. Physics</div>
+                    <div class="price">Y R Sharma</div>
+                    <div class="qty">English</div>
+                    <div class="price">Michael Swan</div>
+                    <div class="qty"> M-2</div>
+                    <div class="price">T. Veerarajan</div>
+                </div>
+
+                <p class="hotelCost"><a
+                        href="https://drive.google.com/drive/folders/1aIRnUUvP2S1LbYyZCeBGGMF0k8E9Rtj4?usp=sharing">Download</a>
+                </p>
+                <p class="disclaimer">YCC don't have any Copyrights of the books, it all taken from a open
+                    source<br />&copy;2021 YCC, Inc.</p>
+            </details>
+
+            <details class="card">
+                <summary class="property yellow">
+                    <span class="eyebrow">SECOND YEAR</span>
+                    SEMESTER-3
+                </summary>
+                <p class="rent">9 papers</p>
+                <div class="priceTable">
+                    <div class="qty">SoM</div>
+                    <div class="price">Variety Authors</div>
+                    <div class="qty">MoF</div>
+                    <div class="price">Variety Authors </div>
+                    <div class="qty">WSE</div>
+                    <div class="price">Variety Authors</div>
+                    <div class="qty">Surveying</div>
+                    <div class="price">Variety Authors</div>
+                </div>
+
+                <p class="hotelCost"><a
+                        href="https://drive.google.com/drive/folders/1aL-kFxRIJRAAYz18cGg1b8QkyNOzxI1z?usp=sharing">Download</a>
+                </p>
+                <p class="disclaimer">YCC don't have any Copyrights of the books, it all taken from a open
+                    source<br />&copy;2021 YCC, Inc.</p>
+            </details>
+        </section>
+
+        <section>
+            <details class="card">
+                <summary class="property yellow">
+                    <span class="eyebrow">SECOND YEAR</span>
+                    SEMESTER-4
+                </summary>
+                <p class="rent">9 papers</p>
+                <div class="priceTable">
+                    <div class="qty">BSD-1</div>
+                    <div class="price">Variety Authors</div>
+                    <div class="qty">CMT</div>
+                    <div class="price">Aceh and Nias </div>
+                    <div class="qty">WWE</div>
+                    <div class="price">Anubha and Kaushik</div>
+                    <div class="qty">AHFM</div>
+                    <div class="price">R K Bansal</div>
+                    <div class="qty">CESGI</div>
+                    <div class="price">Class Notes</div>
+                    <div class="qty">Eng. Geo</div>
+                    <div class="price">Subramanium</div>
+
+                </div>
+
+                <p class="hotelCost"><a
+                        href="https://drive.google.com/drive/folders/1aNx05GTK_gxrUuYgTWap7oNwU45tsAuS?usp=sharing">Download</a>
+                </p>
+                <p class="disclaimer">YCC don't have any Copyrights of the books, it all taken from a open
+                    source<br />&copy;2021 YCC, Inc.</p>
+            </details>
+            <details class="card">
+                <summary class="property yellow">
+                    <span class="eyebrow">THIRD YEAR</span>
+                    SEMESTER-5
+                </summary>
+                <p class="rent">9 papers</p>
+                <div class="priceTable">
+                    <div class="qty">BSD-2</div>
+                    <div class="price"> </div>
+                    <div class="qty">CT</div>
+                    <div class="price">M.S. Shetty</div>
+                    <div class="qty">SA-1</div>
+                    <div class="price">C.S. Reddy</div>
+                    <div class="qty">Soil Mech</div>
+                    <div class="price">VMS Murthi</div>
+                    <div class="qty">Ethics</div>
+                    <div class="price">Nagarazan</div>
+
+                </div>
+
+                <p class="hotelCost"><a
+                        href="https://drive.google.com/drive/folders/1aTee-NnDVDTvs6WnjwyNs2lH9Noewmyi?usp=sharing">Download</a>
+                </p>
+                <p class="disclaimer">YCC don't have any Copyrights of the books, it all taken from a open
+                    source<br />&copy;2021 YCC, Inc.</p>
+
+            </details>
+
+            <details class="card">
+                <summary class="property yellow">
+                    <span class="eyebrow">THIRD YEAR</span>
+                    SEMESTER-6
+                </summary>
+                <p class="rent">9 papers</p>
+                <div class="priceTable">
+                    <div class="qty">Foundation Eng.</div>
+                    <div class="qty">venketramai</div>
+
+                    <div class="qty">SA-2</div>
+                    <div class="price">B.S. Bhaivikatti</div>
+                    <div class="qty">Irrigation</div>
+                    <div class="price">G.L.Aaswa</div>
+
+
+                </div>
+
+                <p class="hotelCost"><a
+                        href="https://drive.google.com/drive/folders/1aUET67-bLLl3WnIGqrRru9Dc13NhEQFh?usp=sharing">Download</a>
+                </p>
+                <p class="disclaimer">YCC don't have any Copyrights of the books, it all taken from a open
+                    source<br />&copy;2021 YCC, Inc.</p>
+            </details>
+        </section>
+
+        <!-- for sem 7,8 and O.E., P.E. -->
+        <!-- <section>
+            <details class="card">
+                <summary class="property yellow">
+                    <span class="eyebrow">title deed</span>
+                    Park Place
+                </summary>
+                <p class="rent">rent $35.</p>
+                <div class="priceTable">
+                    <div class="qty">with 1 house</div>
+                    <div class="price">$ 175.</div>
+                    <div class="qty">with 2 houses</div>
+                    <div class="price">500.</div>
+                    <div class="qty">with 3 houses</div>
+                    <div class="price">1100.</div>
+                    <div class="qty">with 4 houses</div>
+                    <div class="price">1300.</div>
+                </div>
+                <p class="hotel">With HOTEL $1500.</p>
+                <p class="mortgage">Mortgage value $175.</p>
+                <p class="houses">Houses cost $200. each</p>
+                <p class="hotelCost">Hotels, $200. plus 4 houses.</p>
+                <p class="disclaimer">If a player owns ALL the Lots of any Color-Group, the<br />rent is Doubled on
+                    Unimproved Lots in that group.<br />&copy;1935 Hasbro, Inc.</p>
+            </details>
+
+            <details class="card">
+                <summary class="property yellow">
+                    <span class="eyebrow">title deed</span>
+                    Boardwalk
+                </summary>
+                <p class="rent">rent $50.</p>
+                <div class="priceTable">
+                    <div class="qty">with 1 house</div>
+                    <div class="price">$ 200.</div>
+                    <div class="qty">with 2 houses</div>
+                    <div class="price">600.</div>
+                    <div class="qty">with 3 houses</div>
+                    <div class="price">1400.</div>
+                    <div class="qty">with 4 houses</div>
+                    <div class="price">1700.</div>
+                </div>
+                <p class="hotel">With HOTEL $2000.</p>
+                <p class="mortgage">Mortgage value $200.</p>
+                <p class="houses">Houses cost $200. each</p>
+                <p class="hotelCost">Hotels, $200. plus 4 houses.</p>
+                <p class="disclaimer">If a player owns ALL the Lots of any Color-Group, the<br />rent is Doubled on
+                    Unimproved Lots in that group.<br />&copy;1935 Hasbro, Inc.</p>
+            </details>
+        </section> -->
+    </div>
+</body>
+
+</html>
