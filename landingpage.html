@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+
+
+
+<style>
+    @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+    body {
+        font-family: "Source Sans Pro";
+        color: #333333;
+    }
+
+    .container-fluid {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* del and ins edit */
+    del,
+    ins {
+        position: relative;
+        display: inline-block;
+        /* don't wrap to multiple lines */
+        text-decoration: none;
+        /* replacing default del and ins */
+    }
+
+    del:after {
+        content: "";
+        /* required property */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: calc(50%);
+        /* strikethrough line height */
+        border-top: 5px solid red;
+        transform: rotateZ(-5deg);
+        /* rotate strikethrough */
+        animation: del 0.5s ease-in;
+    }
+
+    ins:after {
+        content: "";
+        /* required property */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        animation: ins 1s ease-out;
+        /* ins animation */
+        animation-delay: 0.75s;
+        /* delay until del animation is done */
+        animation-fill-mode: forwards;
+        /*keep animation */
+    }
+
+    /* del animation */
+    @keyframes del {
+        0% {
+            width: 0;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+    /* ins animation */
+    @keyframes ins {
+        0% {
+            width: 0;
+            background: rgb(255, 255, 0);
+            z-index: -1;
+        }
+
+        100% {
+            width: 100%;
+            background: rgb(255, 255, 0);
+            z-index: -1;
+        }
+    }
+
+    /* footer layout */
+    footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        font-size: 0.75em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+</style>
+
+<div class="container-fluid">
+    <h2 class="text-center">Playing with
+        <del>strikethrough</del> <ins>insert</ins> text!
+    </h2>
+</div>
+<footer>
+    <p>Construction and maintenance of site, all by civil engineers</p>
+</footer>
+
+</html>
