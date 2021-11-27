@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title>YellowCapCommunity</title>
+        <link rel="shortcut icon" type="image/jpg" href="./images/ycc logo.png" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet"
+                href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+
+</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-204896280-1"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-204896280-1');
+</script>
+<!----Navigatin Bar-->
+
+<div class="demo">
+        <style>
+                .pagination-outer {
+                        text-align: center;
+                }
+
+                .pagination {
+
+                        border-radius: 10px 10px 0 0;
+                        border-top: 10px solid #feb306;
+                        display: inline-flex;
+                }
+
+                .pagination li {
+                        padding: 5px 0;
+                        margin: 0 5px;
+                }
+
+                .pagination li a.page-link {
+                        color: #000;
+                        background: transparent;
+                        font-size: 21px;
+                        font-weight: 500;
+                        line-height: 30px;
+                        height: 33px;
+                        width: 150px;
+                        padding: 0;
+                        margin: 0;
+                        border: 1px solid #feb306;
+                        border-radius: 0;
+                        display: block;
+                        transition: all 0.3s ease 0s;
+                }
+
+                .pagination li.active a.page-link,
+                .pagination li a.page-link:hover,
+                .pagination li.active a.page-link:hover,
+                .pagination li a.page-link:focus {
+                        color: #000;
+                        background: #feb306;
+                        line-height: 38px;
+                        height: 41px;
+                        margin: -5px 0 -3px;
+                        border: 1px solid #feb306;
+                }
+
+                @media only screen and (max-width: 480px) {
+                        .pagination {
+                                font-size: 0;
+                                display: block;
+                        }
+
+                        .pagination li {
+                                display: inline-block;
+                        }
+                }
+        </style>
+        <nav class="pagination-outer" aria-label="Page navigation">
+                <ul class="pagination">
+
+                        <li class="page-item"><a class="page-link" href="index.html">HOME</a></li>
+                        <li class="page-item"><a class="page-link" href="resources.html">RESOURCES</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">CLICK&KNOW</a></li>
+
+                </ul>
+        </nav>
+</div>
+
+<!-- progress bar -->
+<div class="progress">
+        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 100%"
+                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">YELLOWCAPCOMMUNITY</div>
+</div>
+<!-- style for the page -->
+<style>
+        .card-big-shadow {
+                max-width: 320px;
+                position: relative;
+        }
+
+        .coloured-cards .card {
+                margin-top: 30px;
+        }
+
+        .card[data-radius="none"] {
+                border-radius: 0px;
+        }
+
+        .card {
+                border-radius: 8px;
+                box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+                background-color: #FFFFFF;
+                color: #252422;
+                margin-bottom: 20px;
+                position: relative;
+                z-index: 1;
+        }
+
+
+        .card[data-background="image"] .title,
+        .card[data-background="image"] .stats,
+        .card[data-background="image"] .category,
+        .card[data-background="image"] .description,
+        .card[data-background="image"] .content,
+        .card[data-background="image"] .card-footer,
+        .card[data-background="image"] small,
+        .card[data-background="image"] .content a,
+        .card[data-background="color"] .title,
+        .card[data-background="color"] .stats,
+        .card[data-background="color"] .category,
+        .card[data-background="color"] .description,
+        .card[data-background="color"] .content,
+        .card[data-background="color"] .card-footer,
+        .card[data-background="color"] small,
+        .card[data-background="color"] .content a {
+                color: #FFFFFF;
+        }
+
+        .card.card-just-text .content {
+                padding: 50px 65px;
+                text-align: center;
+        }
+
+        .card .content {
+                padding: 20px 20px 10px 20px;
+        }
+
+        .card[data-color="blue"] .category {
+                color: #7a9e9f;
+        }
+
+        .card .category,
+        .card .label {
+                font-size: 14px;
+                margin-bottom: 0px;
+        }
+
+        .card-big-shadow:before {
+                background-image: url("http://static.tumblr.com/i21wc39/coTmrkw40/shadow.png");
+                background-position: center bottom;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                bottom: -12%;
+                content: "";
+                display: block;
+                left: -12%;
+                position: absolute;
+                right: 0;
+                top: 0;
+                z-index: 0;
+        }
+
+        h4,
+        .h4 {
+                font-size: 1.5em;
+                font-weight: 600;
+                line-height: 1.2em;
+        }
+
+        h6,
+        .h6 {
+                font-size: 0.9em;
+                font-weight: 600;
+                text-transform: uppercase;
+        }
+
+        .card .description {
+                font-size: 16px;
+                color: #66615b;
+        }
+
+        .content-card {
+                margin-top: 30px;
+        }
+
+        a:hover,
+        a:focus {
+                text-decoration: none;
+        }
+
+        /*======== COLORS ===========*/
+        .card[data-color="blue"] {
+                background: #b8d8d8;
+        }
+
+        .card[data-color="blue"] .description {
+                color: #506568;
+        }
+
+        .card[data-color="green"] {
+                background: #d5e5a3;
+        }
+
+        .card[data-color="green"] .description {
+                color: #60773d;
+        }
+
+        .card[data-color="green"] .category {
+                color: #92ac56;
+        }
+
+        .card[data-color="yellow"] {
+                background: #ffe28c;
+        }
+
+        .card[data-color="yellow"] .description {
+                color: #b25825;
+        }
+
+        .card[data-color="yellow"] .category {
+                color: #d88715;
+        }
+
+        .card[data-color="brown"] {
+                background: #d6c1ab;
+        }
+
+        .card[data-color="brown"] .description {
+                color: #75442e;
+        }
+
+        .card[data-color="brown"] .category {
+                color: #a47e65;
+        }
+
+        .card[data-color="purple"] {
+                background: #baa9ba;
+        }
+
+        .card[data-color="purple"] .description {
+                color: #3a283d;
+        }
+
+        .card[data-color="purple"] .category {
+                color: #5a283d;
+        }
+
+        .card[data-color="orange"] {
+                background: #ff8f5e;
+        }
+
+        .card[data-color="orange"] .description {
+                color: #772510;
+        }
+
+        .card[data-color="orange"] .category {
+                color: #e95e37;
+        }
+</style>
+<!-- body html -->
+
+<body class="homebody" oncopy="return false" oncut="return false" onpaste="return false">
+        <div class="container bootstrap snippets bootdeys">
+                <div class="row">
+                        <div class="col-md-4 col-sm-6 content-card">
+                                <div class="card-big-shadow">
+                                        <div class="card card-just-text" data-background="color" data-color="blue"
+                                                data-radius="none">
+                                                <div class="content">
+                                                        <h6 class="category">YCC</h6>
+                                                        <h4 class="title">Online-Learning</h4>
+                                                        <a href="https://www.edx.org/search?language=English&q=civil%20engineering"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-primary col-sm-12 pt-2 btn-block">Edx</button></a>
+                                                        <a
+                                                                href="https://www.coursera.org/search?query=civil%20engineering&index=prod_all_products_term_optimization&allLanguages=English&utm_source=header-for-students-link&utm_content=corp-to-landing-for-students&utm_campaign=header-for-students&utm_medium=coursera"><button
+                                                                        type="button"
+                                                                        class="btn btn-secondary col-sm-12 pt-2 btn-block">Coursera</button></a>
+                                                        <a href="https://swayam.gov.in/explorer"
+                                                                target="https://swayam.gov.in/explorer"><button
+                                                                        type="button"
+                                                                        class="btn btn-success col-sm-12 pt-2 btn-block">Swayam</button></a>
+                                                        <a href="https://www.udemy.com/courses/search/?lang=en&q=civil+engineering&sort=relevance&src=ukw"
+                                                                target="blank"><button type="button "
+                                                                        class="btn btn-danger col-sm-12 pt-2 btn-block">Udemy</button></a>
+                                                        <a href="https://unacademy.com/goal/gate-ese/PESHE/topic/CCIIL"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-warning col-sm-12 pt-2 btn-block">Unacademy</button></a>
+                                                        <a href="https://www.skillshare.com/browse" target="blank">
+                                                                <button type="button"
+                                                                        class="btn btn-info col-sm-12 pt-2 btn-block">SkillShare</button></a>
+                                                        <a href="https://www.pluralsight.com/browse"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-light col-sm-12 pt-2 btn-block">pluralsight</button></a>
+                                                        <a href="https://online-learning.harvard.edu/catalog?keywords=&paid%5B1%5D=1&max_price=&start_date_range%5Bmin%5D%5Bdate%5D=&start_date_range%5Bmax%5D%5Bdate%5D="
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-dark col-sm-12 pt-2 btn-block">Harvard</button></a>
+                                                </div>
+                                        </div> <!-- end card -->
+                                </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 content-card">
+                                <div class="card-big-shadow">
+                                        <div class="card card-just-text" data-background="color" data-color="green"
+                                                data-radius="none">
+                                                <div class="content">
+                                                        <h6 class="category">YCC</h6>
+                                                        <h4 class="title">Job Search</h4>
+                                                        <a href="https://www.jibberjobber.com/login.php"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-light col-sm-12 pt-2 btn-block">JibberJobbers</button></a>
+                                                        <a href="https://www.glassdoor.co.in/index.htm" target="blank">
+                                                                <button type="button"
+                                                                        class="btn btn-dark col-sm-12 pt-2 btn-block">GlassDoor</button>
+                                                        </a>
+                                                        <a href="https://www.linkedin.com/feed/" target="blank"><button
+                                                                        type="button"
+                                                                        class="btn btn-primary col-sm-12 pt-2 btn-block">LinkedIn</button></a>
+                                                        <a href="http://ww7.jobbait.com/" target="blank"><button
+                                                                        type="button"
+                                                                        class="btn btn-warning col-sm-12 pt-2 btn-block">Jobbait</button></a>
+                                                        <a href="https://in.indeed.com/" target="blank"><button
+                                                                        type="button"
+                                                                        class="btn btn-secondary col-sm-12 pt-2 btn-block">Indeed</button></a>
+                                                        <a href="https://www.naukri.com/" target="blank"><button
+                                                                        type="button"
+                                                                        class="btn btn-success col-sm-12 pt-2 btn-block">Naukri</button></a>
+                                                        <a href="https://www.monsterindia.com/rio/login"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-danger col-sm-12 pt-2 btn-block">Monster</button></a>
+
+                                                        <a href="https://www.dice.com/" target="blank"> <button
+                                                                        type="button"
+                                                                        class="btn btn-info col-sm-12 pt-2 btn-block">Dice</button></a>
+
+                                                </div>
+                                        </div> <!-- end card -->
+                                </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 content-card">
+                                <div class="card-big-shadow">
+                                        <div class="card card-just-text" data-background="color" data-color="yellow"
+                                                data-radius="none">
+                                                <div class="content">
+                                                        <h6 class="category">YCC</h6>
+                                                        <h4 class="title">Interview Prep.</h4>
+                                                        <p class="lead">
+                                                                <a href="https://acetheinterview.herokuapp.com/"
+                                                                        target="blank"><button type="button"
+                                                                                class="btn btn-warning col-sm-12 pt-2 btn-block ">AceTheInterview</button></a>
+                                                                <a href="https://www.geeksforgeeks.org/company-interview-corner/"
+                                                                        target="blank"><button type="button"
+                                                                                class="btn btn-dark col-sm-12 pt-2 btn-block ">GeeksforGeeks</button></a>
+                                                                <a href="https://www.livecareer.com/resources/interviews/prep/interviewbest-blog"
+                                                                        target="blank"><button type="button"
+                                                                                class="btn btn-danger col-sm-12 pt-2 btn-block ">InterviewBest</button></a>
+                                                                <a href="https://www.ambitionbox.com/"
+                                                                        target="blank"><button type="button"
+                                                                                class="btn btn-primary col-sm-12 pt-2 btn-block ">AmbitionBox</button></a>
+                                                                <a href="https://www.glowandlovelycareers.in/en/"
+                                                                        target="blank"> <button type="button"
+                                                                                class="btn btn-info col-sm-12 pt-2 btn-block ">G&L
+                                                                                career</button></a>
+                                                                <a href="https://www.careercup.com/"
+                                                                        target="blank"><button type="button"
+                                                                                class="btn btn-secondary col-sm-12 pt-2 btn-block ">CareerCup</button></a>
+                                                                <a href="https://www.indiabix.com/"
+                                                                        target="blank"><button type="button"
+                                                                                class="btn btn-success col-sm-12 pt-2 btn-block ">IndiaBix</button></a>
+                                                                <a href="http://www.gainlo.co/#!/"
+                                                                        target="blank"><button type="button"
+                                                                                class="btn btn-light col-sm-12 pt-2 btn-block ">Gainlo</button></a>
+
+                                                        </p>
+                                                </div>
+                                        </div> <!-- end card -->
+                                </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 content-card">
+                                <div class="card-big-shadow">
+                                        <div class="card card-just-text" data-background="color" data-color="brown"
+                                                data-radius="none">
+                                                <div class="content">
+                                                        <h6 class="category">YCC</h6>
+                                                        <h4 class="title">LinkedIn Pages</h4>
+                                                        <a href="https://www.linkedin.com/company/civilengineeringdiscoveries/"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-primary col-sm-12 pt-2 btn-block ">Civil
+                                                                        Engineering Discoveries</button></a>
+                                                        <a href="https://www.linkedin.com/groups/1785947/"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-secondary col-sm-12 pt-2 btn-block">CAD,CAE,FEM</button></a>
+                                                        <a href="https://www.linkedin.com/company/institution-of-civil-engineers/"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-success col-sm-12 pt-2 btn-block">ICE</button></a>
+                                                        <a href="https://www.linkedin.com/company/larsen-&-toubro-limited/"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-danger col-sm-12 pt-2 btn-block">L&T</button></a>
+                                                        <a href="https://www.linkedin.com/company/shapoorji-pallonji-&-co--ltd-/"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-warning col-sm-12 pt-2 btn-block">Shapoorji</button></a>
+                                                        <a href="https://www.linkedin.com/company/ultratechcement/"
+                                                                target="blank"> <button type="button"
+                                                                        class="btn btn-info col-sm-12 pt-2 btn-block">UltraTech</button></a>
+                                                        <a href="https://www.linkedin.com/company/civil-engineering-association-iit-madras/"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-light col-sm-12 pt-2 btn-block">CAS-IITM</button></a>
+                                                        <a href="https://www.linkedin.com/company/aakaariitb/"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-dark col-sm-12 pt-2 btn-block">Aakaar</button></a>
+                                                </div>
+                                        </div> <!-- end card -->
+                                </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 content-card">
+                                <div class="card-big-shadow">
+                                        <div class="card card-just-text" data-background="color" data-color="purple"
+                                                data-radius="none">
+                                                <div class="content">
+                                                        <h6 class="category">YCC</h6>
+                                                        <h4 class="title">Journals</h4>
+                                                        <a href="https://www.asce.org/" target="blank"><button
+                                                                        type="button"
+                                                                        class="btn btn-primary col-sm-12 pt-2 btn-block">ASCE</button></a>
+                                                        <a href="https://civildigital.com/" target="blank"><button
+                                                                        type="button"
+                                                                        class="btn btn-secondary col-sm-12 pt-2 btn-block">CivilDigital</button></a>
+                                                        <a href="https://www.engineeringcivil.com/"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-success col-sm-12 pt-2 btn-block">EngineeringCivil</button></a>
+                                                        <a href="https://theconstructor.org/" target="blank"><button
+                                                                        type="button"
+                                                                        class="btn btn-danger col-sm-12 pt-2 btn-block">TheConstructor</button></a>
+                                                        <a href="https://www.ice.org.uk/" target="blank"><button
+                                                                        type="button"
+                                                                        class="btn btn-warning col-sm-12 pt-2 btn-block">ICE</button></a>
+                                                        <a href="https://aboutcivil.org/" target="blank"> <button
+                                                                        type="button"
+                                                                        class="btn btn-info col-sm-12 pt-2 btn-block">AboutCivil</button></a>
+                                                        <a href="https://www.civilsimplified.com/"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-light col-sm-12 pt-2 btn-block">CivilSimplified</button></a>
+                                                        <a href="https://www.thecivilengineer.org/"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-dark col-sm-12 pt-2 btn-block">TheCivilEngineer</button></a>
+                                                </div>
+                                        </div> <!-- end card -->
+                                </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 content-card">
+                                <div class="card-big-shadow">
+                                        <div class="card card-just-text" data-background="color" data-color="orange"
+                                                data-radius="none">
+                                                <div class="content">
+                                                        <h6 class="category">YCC</h6>
+                                                        <h4 class="title">YouTube</h4>
+                                                        <a href="https://www.youtube.com/c/civilengineeringsimple/playlists"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-primary col-sm-12 pt-2 btn-block">Civil
+                                                                        Engineering
+                                                                        Simple</button></a>
+                                                        <a href="https://www.youtube.com/channel/UCnaOzPCUym-vNapCjV2p9Pg"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-secondary col-sm-12 pt-2 btn-block">Gate
+                                                                        Academy</button></a>
+                                                        <a href="https://www.youtube.com/user/thecivilenggsite/videos"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-success col-sm-12 pt-2 btn-block">CivilEngineering</button></a>
+                                                        <a href="https://www.youtube.com/user/CivlEngAcademy/featured"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-danger col-sm-12 pt-2 btn-block">Civil
+                                                                        Engineering
+                                                                        Academy</button></a>
+                                                        <a href="https://www.youtube.com/channel/UCvSpLnUTU6MamZwD2a9zySg/feed"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-warning col-sm-12 pt-2 btn-block">Dr.Structure</button></a>
+                                                        <a href="https://www.youtube.com/user/caddsoftsolutions"
+                                                                target="blank">
+                                                                <button type="button"
+                                                                        class="btn btn-info col-sm-12 pt-2 btn-block">Cad
+                                                                        Cam</button></a>
+                                                        <a href="https://www.youtube.com/channel/UClYS6cDC2GSX0phXTQMxOKg"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-light col-sm-12 pt-2 btn-block">CivilEngineers</button></a>
+                                                        <a href="https://www.youtube.com/c/ReckonCivilAcademy/playlists"
+                                                                target="blank"><button type="button"
+                                                                        class="btn btn-dark col-sm-12 pt-2 btn-block">ReckonCivil</button></a>
+                                                </div>
+                                        </div> <!-- end card -->
+                                </div>
+                        </div>
+                </div>
+        </div>
+        <!-------------Footer---------------->
+
+
+</body>
+<footer id="footer" class="footer-1">
+        <style>
+
+        </style>
+        <div class="main-footer widgets-dark typo-light">
+                <div class="container">
+                        <div class="row">
+
+                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <div class="widget subscribe no-box">
+                                                <h5 class="widget-title">YELLOWCAPCOMMUNITY<span></span></h5>
+                                                <p> It began in an attempt to engage students with industrial pioneers
+                                                        and also to enhance each of their skills in all the possible
+                                                        ways so that they can reach
+                                                        their
+                                                        destinations in a better path. </p>
+                                        </div>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-6 col-md-3">
+                                        <div class="widget no-box">
+                                                <h5 class="widget-title">Quick Links<span></span></h5>
+                                                <ul class="thumbnail-widget">
+                                                        <li>
+                                                                <div class="thumb-content"><a href="index.html">Get
+                                                                                Started</a></div>
+                                                        </li>
+                                                        <li>
+                                                                <div class="thumb-content"><a
+                                                                                href="readmore.html#brains-behind">Brains
+                                                                                Behind</a>
+                                                                </div>
+                                                        </li>
+
+                                                        <li>
+                                                                <div class="thumb-content"><a
+                                                                                href="workshops.html">workshops</a>
+                                                                </div>
+                                                        </li>
+                                                        <li>
+                                                                <div class="thumb-content"><a
+                                                                                href="contest.html">Contests</a></div>
+                                                        </li>
+                                                        <li>
+                                                                <div class="thumb-content"><a
+                                                                                href="portfoliodata.html">Portfolio</a>
+                                                                </div>
+                                                        </li>
+                                                        <li>
+                                                                <div class="thumb-content"><a href="about.html">About
+                                                                                Us</a></div>
+                                                        </li>
+                                                        <li>
+                                                                <div class="thumb-content"><a
+                                                                                href="contact.html">Join</a></div>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                </div>
+
+
+                                <div class="col-xs-12 col-sm-6 col-md-3">
+
+                                        <div class="widget no-box">
+                                                <h5 class="widget-title">Contact Us<span></span></h5>
+
+                                                <p>yellowcapcommunity@gmail.com</p>
+                                                <ul class="social-footer2">
+                                                        <li class=""><a title="youtube" target="_blank"
+                                                                        href="https://www.youtube.com/channel/UCDNPsqr4twOLwT4etZjK8uA?sub_confirmation=1">You
+                                                                        Tube</a>
+                                                        </li>
+                                                        <li class=""><a href="https://www.linkedin.com/company/yellowcapcommunity"
+                                                                        target="_blank" title="LinkedIn">LinkedIn</a>
+                                                        </li>
+
+                                                        <li class=""><a href=" https://discord.gg/9SrKafTSJm"
+                                                                        target="_blank" title="Discord">Discord</a>
+                                                        </li>
+
+                                                </ul>
+                                        </div>
+                                </div>
+
+                        </div>
+                </div>
+        </div>
+
+        <div class="footer-copyright">
+                <div class="container">
+                        <div class="row">
+                                <div class="col-md-12 text-center">
+                                        <p>Copyright YELLOWCAPCOMMUNITY © 2021. All rights reserved.</p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</footer>
+
+
+</html>
