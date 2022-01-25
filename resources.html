@@ -1,224 +1,287 @@
 <!DOCTYPE html>
 <html>
+  <!-- head -->
 
-<!-- head -->
-
-<head>
+  <head>
     <title>YellowCapCommunity</title>
     <link rel="shortcut icon" type="image/jpg" href="./images/ycc logo.png" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-    <meta name="viewport" content="width=device-width, inital-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, inital-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
-
-</head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-204896280-1"></script>
-<script>
+    <script>
+      document.addEventListener("contextmenu", (event) =>
+        event.preventDefault()
+      );
+    </script>
+  </head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=UA-204896280-1"
+  ></script>
+  <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    gtag('config', 'UA-204896280-1');
-</script>
-<!-- body -->
+    gtag("config", "UA-204896280-1");
+  </script>
+  <!-- body -->
 
-<body class="homebody" oncopy="return false" oncut="return false" onpaste="return false">
+  <body
+    class="homebody"
+    oncopy="return false"
+    oncut="return false"
+    onpaste="return false"
+  >
     <section id="nav-bar">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="./images/ycc logo.png" width="50" height="50"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" aria-current="page" href="index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">ABOUT US</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="workshops.html">WORKSHOPS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contest.html">CONTESTS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="resources.html">RESOURCES</a>
-                        </li>
-
-
-
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="./images/ycc logo.png" width="50" height="50"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">ABOUT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="workshops.html">WORKSHOPS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contest.html">CONTESTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resources.html">RESOURCES</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </section>
 
     <!-- cards -->
 
     <div class="container1">
-        <div class="card">
-            <div class="content">
-                <img src="./images/resources-blog/blog.png" class="card-img-top align-items-center" alt="...">
-                <div class="contentBx">
-                    <h5 class="card-title">YCC-BLOGS</h5>
-                    <p class="card-text">Various Blogs Written by YCC members</p>
-                    <a href="blog.html" class="btn btn-warning">Visit</a>
-                </div>
-
-            </div>
+      <div class="card">
+        <div class="content">
+          <img
+            src="./images/resources-blog/blog.png"
+            class="card-img-top align-items-center"
+            alt="..."
+          />
+          <div class="contentBx">
+            <h5 class="card-title">YCC-BLOGS</h5>
+            <p class="card-text">Various Blogs Written by YCC members</p>
+            <a href="blog.html" class="btn btn-warning">Visit</a>
+          </div>
         </div>
-        <div class="card">
-            <div class="content">
-                <img src="./images/portfolio.png" class="card-img-top align-items-center" alt="...">
-                <div class="contentBx">
-                    <h5 class="card-title">YCC- PORTFOLIO</h5>
-                    <p class="card-text">An Exclusive Database of members of YCC</p>
-                    <a href="portfolio/portfolio1.html" class="btn btn-warning">Visit Sample</a>
-                </div>
+      </div>
 
-            </div>
+      <div class="card">
+        <div class="content">
+          <img
+            src="./images/bookmarks.png"
+            class="card-img-top align-items-center"
+            alt="..."
+          />
+          <div class="contentBx">
+            <h5 class="card-title">YCC-BOOKMARKS</h5>
+            <p class="card-text">
+              Book Resources for various Semesters as per the syllabus
+            </p>
+            <a href="bookmarks.html" class="btn btn-warning">Visit</a>
+          </div>
         </div>
-        <div class="card">
-            <div class="content">
-                <img src="./images/buttons.png" class="card-img-top align-items-center" alt="...">
-                <div class="contentBx">
-                    <h5 class="card-title">CLICK & KNOW</h5>
-                    <p class="card-text">User friendly single click all-in-all source</p>
-                    <a href="buttons.html" class="btn btn-warning">Click</a>
-                </div>
+      </div>
 
-            </div>
+      <div class="card">
+        <div class="content">
+          <img
+            src="./images/buttons.png"
+            class="card-img-top align-items-center"
+            alt="..."
+          />
+          <div class="contentBx">
+            <h5 class="card-title">CLICK & KNOW</h5>
+            <p class="card-text">
+              User friendly single click all-in-all source
+            </p>
+            <a href="buttons.html" class="btn btn-warning">Click</a>
+          </div>
         </div>
-        <div class="card">
-            <div class="content">
-                <img src="./images/bookmarks.png" class="card-img-top align-items-center" alt="...">
-                <div class="contentBx">
-                    <h5 class="card-title">YCC-BOOKMARKS</h5>
-                    <p class="card-text">Book Resources for various Semesters as per the syllabus</p>
-                    <a href="bookmarks.html" class="btn btn-warning">Visit</a>
-                </div>
+      </div>
 
-            </div>
+      <div class="card">
+        <div class="content">
+          <img
+            src="./images/portfolio.png"
+            class="card-img-top align-items-center"
+            alt="..."
+          />
+          <div class="contentBx">
+            <h5 class="card-title">YCC- PORTFOLIO</h5>
+            <p class="card-text">An Exclusive Database of members of YCC</p>
+            <a href="portfolio/portfolio1.html" class="btn btn-warning"
+              >Visit Sample</a
+            >
+          </div>
         </div>
-
-
-
+      </div>
     </div>
-
-
-
-
-
-</body>
-<!-- footer -->
-<footer id="footer" class="footer-1">
-    <style>
-
-    </style>
+  </body>
+  <!-- footer -->
+  <footer id="footer" class="footer-1">
+    <style></style>
     <div class="main-footer widgets-dark typo-light">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="widget subscribe no-box">
-                        <h5 class="widget-title">YELLOWCAPCOMMUNITY<span></span></h5>
-                        <p>It began in an attempt to engage students with industrial pioneers
-                            and also to enhance each of their skills in all the possible ways so that they can
-                            reach
-                            their
-                            destinations in a better path.</p>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-3">
-                    <div class="widget no-box">
-                        <h5 class="widget-title">Quick Links<span></span></h5>
-                        <ul class="thumbnail-widget">
-                            <li>
-                                <div class="thumb-content"><a href="index.html">Get Started</a></div>
-                            </li>
-                            <li>
-                                <div class="thumb-content"><a href="readmore.html#brains-behind">Brains Behind</a>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="thumb-content"><a href="workshops.html">workshops</a></div>
-                            </li>
-                            <li>
-                                <div class="thumb-content"><a href="contest.html">Contests</a></div>
-                            </li>
-                            <li>
-                                <div class="thumb-content"><a href="resources.html">Resources</a></div>
-                            </li>
-                            <li>
-                                <div class="thumb-content"><a href="about.html">About Us</a></div>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-
-
-                <div class="col-xs-12 col-sm-6 col-md-3">
-
-                    <div class="widget no-box">
-                        <h5 class="widget-title">Contact Us<span></span></h5>
-
-
-                        <ul class="social-footer2">
-                            <li class=""><a title="youtube" target="_blank"
-                                    href="https://www.youtube.com/channel/UCDNPsqr4twOLwT4etZjK8uA?sub_confirmation=1">You
-                                    Tube</a>
-                            </li>
-                            <li class=""><a href="https://www.linkedin.com/company/yellowcapcommunity" target="_blank"
-                                    title="LinkedIn">LinkedIn</a>
-                            </li>
-
-                            <li class=""><a href=" https://discord.gg/9SrKafTSJm" target="_blank"
-                                    title="Discord">Discord</a>
-                            </li>
-                            <li class=""><a title="Email" target="_blank"
-                                    href="https://formsubmit.co/el/nugeni">Email</a>
-                            </li>
-
-                        </ul>
-                    </div>
-
-                </div>
-
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget subscribe no-box">
+              <h5 class="widget-title">YELLOWCAPCOMMUNITY<span></span></h5>
+              <p>
+                It began in an attempt to engage students with industrial
+                pioneers and also to enhance each of their skills in all the
+                possible ways so that they can reach their destinations in a
+                better path.
+              </p>
             </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title">Quick Links<span></span></h5>
+              <ul class="thumbnail-widget">
+                <li>
+                  <div class="thumb-content">
+                    <a href="index.html">Get Started</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="thumb-content">
+                    <a href="readmore.html#brains-behind">Brains Behind</a>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="thumb-content">
+                    <a href="workshops.html">workshops</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="thumb-content">
+                    <a href="contest.html">Contests</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="thumb-content">
+                    <a href="resources.html">Resources</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="thumb-content">
+                    <a href="about.html">About Us</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title">Contact Us<span></span></h5>
+
+              <ul class="social-footer2">
+                <li class="">
+                  <a
+                    title="youtube"
+                    target="_blank"
+                    href="https://www.youtube.com/channel/UCDNPsqr4twOLwT4etZjK8uA?sub_confirmation=1"
+                    >You Tube</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    href="https://www.linkedin.com/company/yellowcapcommunity"
+                    target="_blank"
+                    title="LinkedIn"
+                    >LinkedIn</a
+                  >
+                </li>
+
+                <li class="">
+                  <a
+                    href=" https://discord.gg/9SrKafTSJm"
+                    target="_blank"
+                    title="Discord"
+                    >Discord</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    title="Email"
+                    target="_blank"
+                    href="https://formsubmit.co/el/nugeni"
+                    >Email</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="footer-copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p>Copyright <a href="https://www.linkedin.com/company/yellowcapcommunity"
-                            style="text-decoration: none; color: #feb306;">YELLOWCAPCOMMUNITY </a>©
-                        2021. All rights reserved.
-                        Construction and maintenance of site, all by civil engineers
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>
+              Copyright
+              <a
+                href="https://www.linkedin.com/company/yellowcapcommunity"
+                style="text-decoration: none; color: #feb306"
+                >YELLOWCAPCOMMUNITY </a
+              >© 2021. All rights reserved. Construction and maintenance of
+              site, all by civil engineers
+            </p>
+          </div>
         </div>
+      </div>
     </div>
-</footer>
-
+  </footer>
 </html>
