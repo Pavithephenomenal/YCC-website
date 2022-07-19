@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-  <!-- head  -->
+<!-- head -->
 
-  <head>
+<head>
+    <title>YellowCapCommunity</title>
+
     <link rel="shortcut icon" type="image/jpg" href="./images/ycc logo.png" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
@@ -20,112 +22,99 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
  
-    <script>
-      document.addEventListener("contextmenu", (event) =>
-        event.preventDefault()
-      );
-    </script>
-  </head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=UA-204896280-1"
-  ></script>
-  <script>
+</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-204896280-1"></script>
+<script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    gtag("config", "UA-204896280-1");
-  </script>
-  <!-- inline style for about page -->
+    gtag('config', 'UA-204896280-1');
+</script>
 
-<section id="nav-bar">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"
-            ><img src="./images/ycc logo.png" width="50" height="50"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="home.html"
-                  >HOME</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about-login.html">ABOUT US</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </section>
+<body class="homebody">
 
-  <!-- body -->
-
-  <body class="homebody">
     <!----Navigatin Bar-->
-    <section id="hero" class="d-flex align-items-center">
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <h2 style="color: #feb306">
-              THE YELLOW CAP COMMUNITY
-              <br />
-              <p style="color: #000; font-size: small">
-                An Initiative by Civil Engineering Students of GCT
-              </p>
-            </h2>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <img src="./images/ycc logo.png" width="75px" height="75px">
+                <a class="navbar-brand" href="#"><br />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
 
-            <h2 style="color: #000"></h2>
-            <h1>
-              <span style="color: #ff9933">DREAMS </span
-              ><span style="color: #000080">UNDER</span>
-              <span style="color: #138808">CONSTRUCTION.</span>
-            </h1>
-            <h2>A dedicated community for Civil Engineers.<br /></h2>
-            <div class="d-flex justify-content-center justify-content-lg-start">
-              <a
-                href="./Auth/index.html"
-                class="btn-get-started scrollto"
-                style="text-decoration: none"
-                >LOG IN
-              </a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="home.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="workshops.html">WORKSHOPS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contest.html">CONTESTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resources.html">RESOURCES</a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
             </div>
-          </div>
-          <div
-            class="col-lg-6 order-1 order-lg-2 hero-img"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-          >
-            <img
-              src="images/construction.png"
-              class="img-fluid animated"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
+        </nav>
     </section>
-      <section id="why-us" class="why-us section-bg">
+    <section id="hero" class="d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+                    data-aos="fade-up" data-aos-delay="200">
+                    <h2 style="color: #feb306;">THE YELLOW CAP COMMUNITY
+                        <br>
+                        <p style="color: #000; font-size: small;">An Initiative by Civil Engineering Students of GCT
+                        </p>
+
+                    </h2>
+
+                    <h2 style="color: #000"></h2>
+                    <h1><span style="color: #FF9933;">DREAMS </span><span style="color: #000080;">UNDER</span>
+                        <span style="color:#138808;">CONSTRUCTION.</span>
+                    </h1>
+                    <h2>A dedicated community for Civil Engineers.<br>
+
+                    </h2>
+                    <div class="d-flex justify-content-center justify-content-lg-start">
+                        <a href="resources.html" target="_blank" class="btn-get-started scrollto" style="text-decoration: none;">EXPLORE THE RESOURCES</a> 
+   
+
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="images/construction.png" class="img-fluid animated" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+<br/><br/>
+  
+
+
+<br/><br/>
+    <!-- cta -->
+
+
+    <section id="why-us" class="why-us section-bg">
         <div class="container-fluid" data-aos="fade-up">
 
             <div class="row">
@@ -206,88 +195,155 @@
 
         </div>
     </section>
-    
-  </body>
+    <!--------------- carosel ------------->
 
-  <!-------------Footer---------------->
-  <footer id="footer" class="footer-1">
-    <style></style>
-    <div class="main-footer widgets-dark typo-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="widget subscribe no-box">
-              <h5 class="widget-title">YELLOWCAPCOMMUNITY</h5>
-              <p>
-                It began in an attempt to engage students with industrial
-                pioneers and also to enhance each of their skills in all the
-                possible ways so that they can reach their destinations in a
-                better path.
-              </p>
+
+    <div class="banner3" id="register">
+        <div class="py-5 banner" style="background-image:url(./images/yellowcap.jpeg);">
+            <div class="container" id="regiser">
+                <div class="row">
+                    <div class="col-md-7 col-lg-5">
+
+                        <!-- hidden inputs -->
+                        <iframe width="640px" height="700px"
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSe9B5Lc6FeCIIQNkLQQQMMaj1qqRd8iu2PgbCRErx-r38FPlw/viewform?embedded=true"
+                            frameborder="0" marginwidth="0" marginheight="0"
+                            style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen
+                            mozallowfullscreen msallowfullscreen> </iframe>
+                        <!-- <iframe width="640px" height="480px"
+                            src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__j4hJ_FUQzcwUU1XODVJU01CSUVHSEU1SkkzQk03RS4u&embed=true"
+                            frameborder="0" marginwidth="0" marginheight="0"
+                            style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen
+                            mozallowfullscreen msallowfullscreen> </iframe> -->
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <div class="col-xs-12 col-sm-6 col-md-3">
-            <div class="widget no-box">
-              <h5 class="widget-title">Contact Us<span></span></h5>
-
-              <ul class="social-footer2">
-                <li class="">
-                  <a
-                    title="youtube"
-                    target="_blank"
-                    href="https://www.youtube.com/channel/UCDNPsqr4twOLwT4etZjK8uA?sub_confirmation=1"
-                    >You Tube</a
-                  >
-                </li>
-                <li class="">
-                  <a
-                    href="https://www.linkedin.com/company/yellowcapcommunity"
-                    target="_blank"
-                    title="LinkedIn"
-                    >LinkedIn</a
-                  >
-                </li>
-
-                <li class="">
-                  <a
-                    href=" https://discord.gg/9SrKafTSJm"
-                    target="_blank"
-                    title="Discord"
-                    >Discord</a
-                  >
-                </li>
-                <li class="">
-                  <a
-                    title="Email"
-                    target="_blank"
-                    href="https://formsubmit.co/el/nugeni"
-                    >Email</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- cards -->
+
+    <!-- <div class="container1">
+        <div class="row">
+            <div class="col">
+                <div class="card" style="width: 18rem;">
+                    <img src="./images/join.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">YCC-MEMBERSHIP</h5>
+                        <p class="card-text">Are you really facinated about YCC and want to join us!</p>
+                        <a href="register.html" class="btn btn-primary">Register</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div> -->
+
+</body>
+ 
+
+<!-- footer -->
+
+<footer id="footer" class="footer-1">
+    <style>
+
+    </style>
+    <div class="main-footer widgets-dark typo-light">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget subscribe no-box">
+                        <h5 class="widget-title">YELLOWCAPCOMMUNITY<span></span></h5>
+                        <p> It began in an attempt to engage students with industrial pioneers
+                            and also to enhance each of their skills in all the possible ways so that they can reach
+                            their
+                            destinations in a better path. </p>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-3">
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Quick Links<span></span></h5>
+                        <ul class="thumbnail-widget">
+                            <li>
+                                <div class="thumb-content"><a href="index.html">Get Started</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="readmore.html#brains-behind">Brains Behind</a>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="thumb-content"><a href="workshops.html">workshops</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="contest.html">Contests</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="resources.html">Resources</a></div>
+                            </li>
+                            <li>
+                                <div class="thumb-content"><a href="about.html">About Us</a></div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="col-xs-12 col-sm-6 col-md-3" id="social">
+
+                    <div class="widget no-box">
+                        <h5 class="widget-title">Contact Us<span></span></h5>
+
+
+                        <ul class="social-footer2">
+                            <li class=""><a title="youtube" target="_blank"
+                                    href="https://www.youtube.com/channel/UCDNPsqr4twOLwT4etZjK8uA?sub_confirmation=1">You
+                                    Tube</a>
+                            </li>
+                            <li class=""><a href="https://www.linkedin.com/company/yellowcapcommunity" target="_blank"
+                                    title="LinkedIn">LinkedIn</a>
+                            </li>
+
+                            <li class=""><a href=" https://discord.gg/9SrKafTSJm" target="_blank"
+                                    title="Discord">Discord</a>
+                            </li>
+                            <li class=""><a title="Email" target="_blank"
+                                    href="https://formsubmit.co/el/nugeni">Email</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
     <div class="footer-copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>
-              Copyright
-              <a
-                href="https://www.linkedin.com/company/yellowcapcommunity"
-                style="text-decoration: none; color: #feb306"
-                >YELLOWCAPCOMMUNITY </a
-              >© 2022. All rights reserved. Construction and maintenance of
-              site, all by civil engineers
-            </p>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>Copyright <a href="https://www.linkedin.com/company/yellowcapcommunity"
+                            style="text-decoration: none; color: #feb306;">YELLOWCAPCOMMUNITY </a>©
+                        2022. All rights reserved.
+                        Construction and maintenance of site, all by civil engineers
+                    </p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </footer>
+</footer>
+
+
 </html>
